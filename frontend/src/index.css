@@ -1,0 +1,171 @@
+.main-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.medlem-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.medlem-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.medlem-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.medlem-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.logg-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.logg-table th,
+.logg-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.logg-table th {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .medlem-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medlem-card {
+    width: 100% !important;
+    max-width: 300px;
+  }
+
+  .logg-table {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .logg-table thead {
+    display: none;
+  }
+
+  .logg-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+
+  .logg-table td {
+    display: block;
+    text-align: left;
+    padding: 4px 0;
+  }
+
+  .logg-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+  }
+}
+
+.profil-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.profil-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.profil-bilde {
+  width: 200px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.profil-info p {
+  margin: 0.5rem 0;
+}
+
+.profil-interesser {
+  margin-bottom: 2rem;
+}
+
+.profil-bilde {
+  width: 200px;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* ✨ Gölge efekti */
+}
+
+.profil-info {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.profil-interesser ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.arbeidslogg {
+  margin-top: 2rem;
+}
+
+.arbeidslogg table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.arbeidslogg th,
+.arbeidslogg td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.arbeidslogg th {
+  background-color: #f2f2f2;
+}
